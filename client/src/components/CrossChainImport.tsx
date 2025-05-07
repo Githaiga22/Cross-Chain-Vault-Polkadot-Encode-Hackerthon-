@@ -165,7 +165,7 @@ export default function CrossChainImport({
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="ethereum">Ethereum</SelectItem>
-                <SelectItem value="polygon">Polygon</SelectItem>
+                <SelectItem value="Lisk">Lisk</SelectItem>
                 <SelectItem value="binance">Binance Smart Chain</SelectItem>
               </SelectContent>
             </Select>
@@ -182,8 +182,8 @@ export default function CrossChainImport({
                 <SelectValue placeholder="Select type" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="POAP's">Wallet</SelectItem>
-                <SelectItem value="NFT's">Social</SelectItem>
+                <SelectItem value="POAP's">POAP's</SelectItem>
+                <SelectItem value="NFT's">NFT's</SelectItem>
                 <SelectItem value="kyc">Badges</SelectItem>
               </SelectContent>
             </Select>
