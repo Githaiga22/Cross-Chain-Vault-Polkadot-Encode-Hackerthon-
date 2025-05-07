@@ -10,6 +10,138 @@
 
 Cross-Chain Identity Vault is a decentralized application that enables users to view and share their identity or reputation data (POAPs, NFTs, badges, messages) across different blockchain networks, specifically from Ethereum/Lisk to Polkadot-based chains. Built by Polkadot Junior Ambassadors and PBA-x students, this project demonstrates the power of cross-chain interoperability.
 
+
+## 🔄 Application Lifecycle
+
+### Cross-Chain Identity Flow
+
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│   Ethereum      │     │  Cross-Chain    │     │    Moonbeam     │
+│    User         │     │  Identity Vault │     │     Network     │
+└────────┬────────┘     └────────┬────────┘     └────────┬────────┘
+         │                       │                       │
+         │  1. Connect Wallet   │                       │
+         │─────────────────────>│                       │
+         │                       │                       │
+         │  2. Sign Message     │                       │
+         │<─────────────────────│                       │
+         │                       │                       │
+         │  3. Verify Identity  │                       │
+         │─────────────────────>│                       │
+         │                       │                       │
+         │                       │  4. Store Identity   │
+         │                       │─────────────────────>│
+         │                       │                       │
+         │                       │  5. Confirm Storage  │
+         │                       │<─────────────────────│
+         │                       │                       │
+         │  6. Share Identity   │                       │
+         │─────────────────────>│                       │
+         │                       │                       │
+         │                       │  7. Cross-Chain      │
+         │                       │     Verification     │
+         │                       │─────────────────────>│
+         │                       │                       │
+         │  8. Success          │                       │
+         │<─────────────────────│                       │
+         │                       │                       │
+```
+
+### Process Explanation
+
+1. **Wallet Connection**
+   - User connects their Ethereum wallet
+   - System verifies wallet ownership
+   - Establishes secure connection
+
+2. **Identity Verification**
+   - User signs a message to prove ownership
+   - System verifies the signature
+   - Creates secure session
+
+3. **Identity Storage**
+   - User's identity data is prepared
+   - Data is encrypted and hashed
+   - Stored on Moonbeam network
+
+4. **Cross-Chain Bridge**
+   - Identity data is bridged to Moonbeam
+   - Verification proofs are generated
+   - Cross-chain messages are sent
+
+5. **Identity Sharing**
+   - User can share their identity
+   - Recipients can verify authenticity
+   - Cross-chain verification occurs
+
+### Key Components
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    Cross-Chain Bridge                    │
+├─────────────────┬─────────────────┬─────────────────────┤
+│  Ethereum Side  │  Bridge Layer   │   Moonbeam Side     │
+├─────────────────┼─────────────────┼─────────────────────┤
+│ - Wallet        │ - Message       │ - Identity          │
+│   Connection    │   Verification  │   Storage          │
+│ - Identity      │ - Cross-Chain   │ - Verification     │
+│   Signing       │ - Cross-Chain   │   System           │
+│ - Proof         │ - State         │ - Access           │
+│   Generation    │   Management    │   Control          │
+└─────────────────┴─────────────────┴─────────────────────┘
+```
+
+### Data Flow
+
+1. **Input Layer**
+   - User authentication
+   - Identity data collection
+   - Proof generation
+
+2. **Processing Layer**
+   - Data validation
+   - Cross-chain message creation
+   - State management
+
+3. **Output Layer**
+   - Identity storage
+   - Verification system
+   - Access control
+
+### Security Measures
+
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  User Identity  │     │  Verification   │     │  Cross-Chain    │
+│     Data        │────▶│     Layer       │────▶│    Storage      │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+        │                       │                       │
+        │                       │                       │
+        ▼                       ▼                       ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  Encryption     │     │  Proof          │     │  Access         │
+│  Layer          │     │  Generation     │     │  Control        │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+```
+
+### Use Cases
+
+1. **Identity Verification**
+   - Cross-chain identity proof
+   - Reputation sharing
+   - Achievement verification
+
+2. **Data Sharing**
+   - Secure identity transfer
+   - Cross-chain messaging
+   - State synchronization
+
+3. **Access Control**
+   - Permission management
+   - Identity-based access
+   - Cross-chain permissions 
+   
 ## 🌟 Features
 
 - **Cross-Chain Identity Management**
