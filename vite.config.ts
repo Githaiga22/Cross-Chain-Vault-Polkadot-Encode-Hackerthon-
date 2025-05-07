@@ -36,8 +36,9 @@ export default defineConfig(async () => {
       emptyOutDir: true,
     },
     server: {
-      host: "0.0.0.0",   // Important for Render to detect the server
-      port: 3000,        // You can use another port if needed
+      allowedHosts: ["cross-chain-vault.onrender.com"],
+      host: true, // optional, allows access via public IP or domain
+      port: 5173, // optional
     },
   };
 });
