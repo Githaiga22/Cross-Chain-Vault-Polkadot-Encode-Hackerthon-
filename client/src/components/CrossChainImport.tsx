@@ -182,9 +182,9 @@ export default function CrossChainImport({
                 <SelectValue placeholder="Select type" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="wallet">Wallet</SelectItem>
-                <SelectItem value="social">Social</SelectItem>
-                <SelectItem value="kyc">KYC</SelectItem>
+                <SelectItem value="POAP's">Wallet</SelectItem>
+                <SelectItem value="NFT's">Social</SelectItem>
+                <SelectItem value="kyc">Badges</SelectItem>
               </SelectContent>
             </Select>
           </div>
